@@ -1,3 +1,4 @@
+```
 # 安装
 npm install
 
@@ -18,3 +19,4 @@ npm run preview
 
 # lint
 npm run lint
+```
