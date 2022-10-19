@@ -1,0 +1,68 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    // 以严格模式解析 - 推荐的
+    // 启用所有严格模式选项，可以根据需要关闭单个严格模式系列检查。
+    // 文档：https://www.typescriptlang.org/zh/tsconfig#strict
+    "strict": true,
+    /** strict------start------ **/
+    // // 永远严格，为每个源文件发出“use strict” - 推荐的
+    // "alwaysStrict": false,
+    // // 严格的空检查 - 推荐的
+    // "strictNullChecks": false,
+    // // 严格绑定调用应用 - 推荐的
+    // "strictBindCallApply": false,
+    // // 严格的函数类型 - 推荐的
+    // "strictFunctionTypes": false,
+    // // 严格的属性初始化 - 推荐的
+    // "strictPropertyInitialization": false,
+    // // 没有任何隐含的Any - 推荐的
+    // "noImplicitAny": false,
+    // // 没有隐含的This - 推荐的
+    // "noImplicitThis": false,
+    // // Catch保证抛出的对象是Error子类
+    // "useUnknownInCatchVariables": false,
+    /** strict------end------ **/
+    // 精确可选属性类型 - 推荐的
+    "exactOptionalPropertyTypes": true,
+    // ES 模块互操作性 - 推荐的
+    // "esModuleInterop": true,
+    // 在文件名中强制使用一致的大小写 - 推荐的
+    // "forceConsistentCasingInFileNames": true,
+
+    // 是否允许编译javascript文件
+    "allowJs": true,
+    // 从 tslib 导入外部帮助库: 比如__extends，__rest等
+    "importHelpers": true,
+    // 启用装饰器
+    "experimentalDecorators": true,
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true,
+    // 是否包含可以用于 debug 的 sourceMap
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/assets"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ],
+  "types": ["element-plus/global"]
+}
