@@ -1,3 +1,7 @@
+# 1、`App.vue` 文件中的 `el-tooltip` 组件，是否存在会影响 `el-popover effect="dark"` 样式；
+
+# 2、当 `el-tooltip` 组件存在时，注释与放开 `vite.config.ts` 文件中的 `optimizeDeps` 属性会影响el-popover样式；
+
 ```
 # 安装
 npm install
@@ -20,3 +24,4 @@ npm run preview
 # lint
 npm run lint
 ```
+
